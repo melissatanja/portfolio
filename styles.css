@@ -25,11 +25,11 @@ h2 {
 }
 
 #container {
+    width: 75vw;
     display: grid;
     grid-column-gap: 25px;
     grid-row-gap: 25px;
     margin: auto;
-    width: 70vw;
     /* position: relative; */
 }
 
