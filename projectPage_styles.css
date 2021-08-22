@@ -46,7 +46,6 @@
     width: 100%;
     height: 100%;
     margin-left: 5%;
-    /* margin-top: 5%; */
 }
 
 .videoContainer {
@@ -54,7 +53,7 @@
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: #000;
+    /* background-color: #000; */
     width: 30.6vw;
 }
 
@@ -64,5 +63,17 @@
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: #000;   
+    /* background-color: #000;    */
+}
+
+#arCharacterImage {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#arSceneImage {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
