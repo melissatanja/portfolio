@@ -1,0 +1,68 @@
+.pageTitleContainer {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+    width: 23vw;
+    height: 15vh;
+}
+
+#pageTitle {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.logoLeftContainer {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    width: 23vw;
+    height: 15vh;
+}
+
+#logoLeft {
+    top: 100%;
+    transform: translate(0, -100%);
+}
+
+.videoProject {
+    width: 75vw;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.textLeft {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #d6d7ec;
+    width: 15.3vw;
+}
+
+.projectTitle {
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+    /* margin-top: 5%; */
+}
+
+.videoContainer {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #000;
+    width: 30.6vw;
+}
+
+.mediaRight {
+    width: 23vw;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #000;   
+}
