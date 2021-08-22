@@ -1,9 +1,12 @@
 .pageTitleContainer {
     position: relative;
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     width: 23vw;
-    height: 15vh;
+    height: 13vh;
+    background-color: #8a9e90;
+    /* top: 20%; */
+    text-align: center;
 }
 
 #pageTitle {
@@ -11,24 +14,11 @@
     margin-top: 10%;
 }
 
-.logoLeftContainer {
-    position: relative;
-    grid-column: 1;
-    grid-row: 1;
-    width: 23vw;
-    height: 15vh;
-}
-
-#logoLeft {
-    top: 100%;
-    transform: translate(0, -100%);
-}
-
 .videoProject {
     width: 75vw;
     display: grid;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
     margin: auto;
     margin-top: 50px;
 }
@@ -38,7 +28,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: #d6d7ec;
+    background-color: #ffdcdc80;
     width: 15.3vw;
 }
 
@@ -53,7 +43,7 @@
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
-    width: 30.6vw;
+    width: 33vw;
 }
 
 .mediaRight {
@@ -74,4 +64,37 @@
     position: relative;
     width: 23vw;
     height: auto;
+}
+
+#foundOrganics {
+    position: relative;
+    width: 10vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.photoset3 {
+    width: 10vw;
+    display: inline-block;
+}
+
+#riceImage {
+    position: relative;
+    width: 10vw;
+    height: auto;
+    display: block;
+}
+
+#breadImage {
+    position: relative;
+    width: 10vw;
+    height: auto;
+    display: block;
+}
+
+#asparagusImage {
+    position: relative;
+    width: 10vw;
+    height: auto;
+    display: block;
 }
