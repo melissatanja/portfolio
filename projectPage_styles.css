@@ -115,32 +115,45 @@
 /* grid project page */
 
 .cardContainer {
-    width: 75vw;
+    max-width: 75vw;
     margin: auto;
 }
 
 .card {
     display: inline-block;
     margin: 0;
-    margin-right: 15px;
+    /* margin-right: 30px; */
     margin-top: 50px;
-    width: 300px;
+    width: 273px;
+    vertical-align: top;
 }
 
 #imageCard {
     height: auto;
     text-align: center;
+    margin-left: 30px;
+}
+
+#imageCardLeft {
+    height: auto;
+    text-align: center;
+    margin-left: 0;
 }
 
 #textCard {
-    height: 345px;
+    height: 320px;
     background-color: #ffdcdc80;
     vertical-align: top;
 }
 
 #imageSq {
-    width: 300px;
+    width: 273px;
     height: auto;
+}
+
+#imageVert {
+    width: auto;
+    height: 273px;
 }
 
 /* #test {
