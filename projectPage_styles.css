@@ -119,25 +119,30 @@
     margin: auto;
 }
 
-.albumImage {
+.card {
     display: inline-block;
-    margin: 3%;
-    /* margin-left: 0; */
-    margin-top: 0;
+    margin: 0;
+    margin-right: 15px;
+    margin-top: 50px;
+    width: 300px;
+}
+
+#imageCard {
+    height: auto;
+    text-align: center;
+}
+
+#textCard {
+    height: 345px;
+    background-color: #ffdcdc80;
+    vertical-align: top;
+}
+
+#imageSq {
     width: 300px;
     height: auto;
 }
 
-.textCard {
-    display: inline-block;
-    margin: 3%;
-    margin-left: 0;
-    margin-top: 0;
-    width: 300px;
-    height: 300px;
-    background-color: #ffdcdc80;
-}
-
-#firstRow {
-    margin-top: 50px;
-}
+/* #test {
+    display:contents;
+} */
