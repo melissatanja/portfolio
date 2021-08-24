@@ -151,6 +151,16 @@
     height: auto;
 }
 
+#imageSmallSq {
+    width: 115px;
+    height: auto;
+}
+
+#imageSmall {
+    width: 250px;
+    height: auto;
+}
+
 #imageVert {
     width: auto;
     height: 273px;
