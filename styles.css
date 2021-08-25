@@ -273,7 +273,7 @@ a {
     .container {
         grid-template-columns: 75vw;
         grid-template-rows: auto;
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
     }
 
     .logoContainer {
