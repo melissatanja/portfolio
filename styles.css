@@ -266,3 +266,28 @@ a {
 }
 
 
+@media only screen and (max-width: 700px) {
+
+    .category {
+        /* display: block; */
+        position: relative;
+        max-width: 700px;
+    }
+
+    #a3DContainer {
+        z-index: 1;
+    }
+
+    #gdContainer {
+        z-index: 2;
+    }
+
+    #p3DContainer {
+        z-index: 3;
+    }
+
+    #a2DContainer {
+        z-index: 4;
+    }
+    
+}
