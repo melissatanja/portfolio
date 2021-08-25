@@ -57,7 +57,7 @@ h1 {
 /* header of home page */
 
 .nav {
-    width: 23vw;
+    width: 100%;
     grid-column: 3;
     grid-row: 1;
     /* padding: 5px; */
@@ -97,11 +97,11 @@ a {
     position: relative;
     display: inline-block;
     /* margin: auto; */
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 4.3%;
+    padding-right: 4.3%;
     padding-top: 0;
     padding-bottom: 0;
-    width: 6vw;
+    width: 24%;
     height: 100%;
     text-align: center;
 }
@@ -163,7 +163,9 @@ a {
 .container {
     width: 75vw;
     display: grid;
-    grid-column-gap: 15px;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 20vh 20vh auto auto auto;
+    grid-column-gap: 20px;
     grid-row-gap: 20px;
     margin: auto;
 }
@@ -179,15 +181,14 @@ a {
 #a3DContainer {
     grid-column: 1;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 5;
     position: relative;
-    width: 23vw;
-    height: auto;
+    overflow: hidden;
 }
 
 #a3DImage {
-    width: 23vw;
-    height: 57.25vh;
+    width: 100%;
+    height: 100%;
 }
 
 #a3DTextBox {
@@ -199,16 +200,15 @@ a {
 }
 
 #gdContainer {
-    width: 23vw;
-    height: auto;
     grid-column: 2;
     grid-row-start: 2;
     grid-row-end: 4;
     position: relative;
+    overflow: hidden;
 }
 
 #gdImage {
-    width: 23vw;
+    width: 100%;
     height: 100%;
 }
 
@@ -221,17 +221,16 @@ a {
 }
 
 #p3DContainer {
-    width: 23vw;
-    height: 100%;
     grid-column: 3;
     grid-row-start: 2;
     grid-row-end: 7;
     position: relative;
+    overflow: hidden;
 }
 
 #p3DImage {
-    width: 23vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 #p3DTextBox {
@@ -243,18 +242,17 @@ a {
 }
 
 #a2DContainer {
-    width: 48vw;
-    height: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 6;
     position: relative;
+    overflow: hidden;
 }
 
 #a2DImage {
-    width: 48vw;
-    height: 38vh;
+    width: 100%;
+    height: 100%;
 }
 
 #a2DTextBox {
@@ -266,28 +264,132 @@ a {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
+
+    #noScroll {
+        overflow: scroll;
+    }
+
+    .container {
+        grid-template-columns: 75vw;
+        grid-template-rows: auto;
+        margin-bottom: 25px;
+    }
+
+    .logoContainer {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 5;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .logoName {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+    html, 
+    body,
+    .mobileMain, 
+    .mobileMain section{
+        /* width: 75vw; */
+        height: 100%;
+        margin: auto;
+        /* display: block; */
+    }
+
+    .mobileMain section {
+        position: relative;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    #a3DImageSrc {
+        background-image: url("images/foundOrganics.gif");
+    }
+
+    #gdImageSrc {
+        background-image: url("images/gdImage.png");
+    }
+
+    #p3DImageSrc {
+        background-image: url("images/p3DImage.gif");
+    }
+
+    #a2DImageSrc {
+        background-image: url("images/a2DImage.gif");
+    }
 
     .category {
-        /* display: block; */
         position: relative;
-        max-width: 700px;
+        display: none;
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
     }
 
     #a3DContainer {
         z-index: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* grid-row: 2; */
     }
 
     #gdContainer {
         z-index: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* grid-row: 2; */
     }
 
     #p3DContainer {
         z-index: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* grid-row: 2; */
     }
 
     #a2DContainer {
         z-index: 4;
-    }
+    } 
     
+}
+
+@media only screen and (max-width: 1450px) {
+
+    a {
+        font-size: 12pt;
+    }
+
+    p {
+        font-size: 16pt;
+    }
+
+    #linkContainer {
+        width: 18%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    a {
+        font-size: 11pt;
+    }
+
+    p {
+        font-size: 14pt;
+    }
+
+    #linkContainer {
+        width: 15%;
+    }
+
 }
