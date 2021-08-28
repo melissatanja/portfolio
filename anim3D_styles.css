@@ -1,0 +1,172 @@
+.videoProject2 {
+    width: 100%;
+    display: block;
+    margin: 0;
+    margin-top: 50px;
+}
+
+#fullScreen {
+    width: 100%;
+    /* height: 100vh; */
+    height: auto;
+    margin: 0;
+    margin-top: -25vh;
+    z-index: 1;
+}
+
+.videoContainer2 {
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: hidden;
+}
+
+.textLeft2 {
+    background-color: #ffdcdc80;
+    width: 100%;
+    height: 75px;
+    margin: 0;
+}
+
+#arOverlay {
+    opacity: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#worldOverlay {
+    opacity: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#foundOverlay {
+    opacity: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#arTitle:hover #arOverlay{
+    opacity: 1;
+    display: block;
+}
+
+#worldTitle:hover #worldOverlay{
+    opacity: 1;
+    display: block;
+}
+
+#foundTitle:hover #foundOverlay{
+    opacity: 1;
+    display: block;
+}
+
+#arTitle:hover #fixed {
+    opacity: 0;
+    display: none;
+}
+
+#worldTitle:hover #fixed {
+    opacity: 0;
+    display: none;
+}
+
+#foundTitle:hover #fixed {
+    opacity: 0;
+    display: none;
+}
+
+#extraLarge {
+    font-size: 36pt;
+    letter-spacing: 10px;
+}
+
+#overlayImage {
+    position: relative;
+    min-width: fit-content;
+    width: 15vw;
+    height: 20vh;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#overlayDescription {
+    width: 20vw;
+    margin-left: 8%;
+}
+
+.overlay2 {
+    position: relative;
+    /* top: -500px; */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 30vh;
+    width: 100%;
+    transition: .5s ease;
+    background-color: #ffffff;
+    display: inline-block;
+    justify-content: center;
+}
+
+#photoRight2 {
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    /* display: block; */
+}
+
+#fixed {
+    display: block;
+}
+
+section {
+    position: sticky;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    height: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 70vh; 
+    text-align: center; 
+    padding: 2vw;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    overflow: hidden;
+} 
+
+#videoSection {
+    background-image: url("images/gdImage.png");
+}
+
+#arSection {
+    background-image: url("images/anim3D/arImage.png");
+}
+
+#worldSection {
+    background-image: url("images/anim3D/worldImage.png");
+}
+
+@media only screen and (max-width: 750px) {
+
+    #fullScreen {
+        margin-top: 0;
+        height: auto;
+    }
+
+}

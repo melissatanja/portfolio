@@ -13,7 +13,7 @@
 
 <!-- 3D animation -->
             <div class="category" id="a3DContainer">
-                <a href="anim3D_page.html"> 
+                <a href="anim3D.html"> 
                     <img id="a3DImage" src="images/a3DImage.gif" alt="animated found-object sculpture">
 
                     <div id="a3DTextBox"> 
@@ -38,7 +38,7 @@
                     <div id="linkContainer"> 
                         <div class="active" id="linkText"> <p> home </p> </div>
 
-                        <a href="index.html"> 
+                        <a id="navLink" href="index.html"> 
                             
                             <div id="linkOverlay">
                                 <div class="overlay"></div>
@@ -49,7 +49,7 @@
                     <div id="linkContainer"> 
                         <div id="linkText"> <p> about </p> </div>
                         
-                        <a href=""> 
+                        <a id="navLink" href=""> 
                             
                             <div id="linkOverlay">
                                 <div class="overlay"></div>
@@ -60,7 +60,7 @@
                     <div id="linkContainer"> 
                         <div id="linkText"> <p> contact </p> </div>
                         
-                        <a href=""> 
+                        <a id="navLink" href=""> 
                             
                             <div id="linkOverlay">
                                 <div class="overlay"></div>
@@ -117,14 +117,44 @@
 
         </div>
 
-        <div id="mobileMain" class="mobileMain">
 
-            <section id=a3DImageSrc></section>
-            <section id=p3DImageSrc></section>
-            <section id=gdImageSrc></section>
-            <section id=a2DImageSrc></section>
+            <div class="mobileContainer">
 
-        </div>
+                <a href="anim3D_page.html"> 
+                    <section id=a3DImageSrc></section>
+                    <section class=overlaySection id=a3DImageSrc>
+                        <div class=overlayText> <h3> 3D ANIMATION </h3></div>
+                    </section>
+                </a>
+
+
+                <a href="graphicdesign_page.html">
+                    <section id=gdImageSrc></section>
+                    <section class=overlaySection id=gdImageSrc>
+                        <div class=overlayText> <h3> GRAPHIC DESIGN </h3></div>
+                    </section>
+                </a>
+
+
+                <a href="print3D_page.html">
+                    <section id=p3DImageSrc></section>
+                    <section class=overlaySection id=p3DImageSrc>
+                        <div class=overlayText> <h3> 3D PRINTS </h3></div>
+                    </section>
+                </a>
+
+
+                <a href="anim2D_page.html">
+                    <section id=a2DImageSrc></section>
+                    <section class=overlaySection id=a2DImageSrc>
+                        <div class=overlayText> <h3> 2D ANIMATION </h3></div>
+                    </section>
+                </a>
+
+            </div>
+
+
+        <!-- </div> -->
 
     </body>
 </html>
