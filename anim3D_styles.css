@@ -1,16 +1,24 @@
 .videoProject2 {
-    width: 100%;
+    width: 100vw;
     display: block;
     margin: 0;
     margin-top: 50px;
 }
 
 #fullScreen {
-    width: 100%;
+    width: 100vw;
     /* height: 100vh; */
     height: auto;
     margin: 0;
     margin-top: -25vh;
+    z-index: 1;
+}
+
+#fullScreenShiftY {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    margin-top: -50vh;
     z-index: 1;
 }
 
@@ -129,6 +137,14 @@
     /* display: block; */
 }
 
+#photoRightShort {
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    /* display: block; */
+}
+
 #fixed {
     display: block;
 }
@@ -140,7 +156,7 @@ section {
     background-size: 100vw auto;
     height: 100%;
     box-sizing: border-box;
-    max-width: 100%;
+    max-width: 100vw;
     height: 70vh; 
     text-align: center; 
     padding: 2vw;
@@ -183,9 +199,64 @@ section {
 
 @media only screen and (max-width: 750px) {
 
+    h3 {
+        font-size: 18pt;
+    }
+
     #fullScreen {
         margin-top: 0;
         height: auto;
+    }
+
+    #fullScreenShiftY {
+        margin-top: 0;
+    }
+
+    section {
+        height: auto;
+    }
+
+    .videoContainer2 {
+        max-height: 30vh;
+    }
+
+    .infoSection {
+        height: 70vh;
+    }
+
+    #overlayImage {
+        display: inline-block;
+        width: 25vw;
+        margin-left: 8%;
+    }
+
+    #photoRight2 {
+        width: auto;
+        height: 70%;
+        display: block;
+    }
+
+    #photoRightShort {
+        width: auto;
+        height: 45%;
+        display: inline-block;
+    }
+
+    #overlayDescription {
+        display: inline-block;
+        margin-left: 8%;
+        width: 25vw;
+    }
+
+    .card {
+        display: inline-block;
+        margin: auto;
+    }
+
+    .overlay2 {
+        display: inline-block;
+        justify-content: left;
+        text-align: left;
     }
 
 }
